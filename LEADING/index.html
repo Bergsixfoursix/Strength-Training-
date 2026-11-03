@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Strength Training - Força e Saude!</title>
+    <!-- Bootstrap -->
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+        <a class="navbar-brand" href="#inicio">
+            Strength Training
+        </a>
+
+        <!-- Botão para celular -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Abrir menu"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links do menu -->
+        <div class="collapse navbar-collapse"
+             id="menuPrincipal">
+
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#inicio">Início</a>
+                <a class="nav-link" href="#beneficios">Benefícios</a>
+                <a class="nav-link" href="#treinos">Treinos</a>
+                <a class="nav-link" href="#contato">Contato</a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+</header>
+        
+<!--topo-->
+<section id="inicio" class="hero text-center py-5">
+    <div class="container">
+
+        <h1>Transforme sua força, transforme sua vida!</h1>
+
+        <p class="lead">
+            Conheça os benefícios do treino de força
+            para sua saúde e qualidade de vida.
+        </p>
+
+        <a href="#beneficios" class="btn btn-success btn-lg">
+            Conhecer benefícios
+        </a>
+
+    </div>
+</section>
+    
+<!-- duas colunas grid -->
+<section id="beneficios" class="container py-5">
+
+    <h2 class="text-center mb-4">
+        Treino de Força
+    </h2>
+
+    <div class="row">
+
+        <!-- Primeira coluna -->
+        <div class="col-md-6">
+            <h3>Benefícios</h3>
+
+            <p>
+                O treino de força ajuda a fortalecer
+                os músculos e melhorar a saúde.
+            </p>
+
+            <ul>
+                <li>Aumento da força muscular</li>
+                <li>Fortalecimento dos ossos</li>
+                <li>Melhora da postura</li>
+                <li>Mais qualidade de vida</li>
+            </ul>
+        </div>
+
+        <!-- Segunda coluna -->
+        <div class="col-md-6">
+            <h3>Dicas para iniciantes</h3>
+
+            <p>
+                Começar com segurança é importante
+                para obter bons resultados.
+            </p>
+
+            <ul>
+                <li>Comece com cargas leves</li>
+                <li>Aprenda a execução correta</li>
+                <li>Respeite os dias de descanso</li>
+                <li>Busque orientação profissional</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+    
+<!-- Seção de treinos -->
+<section id="treinos" class="container py-5">
+
+    <h2 class="text-center mb-4">
+        Tipos de Treino de Força
+    </h2>
+
+    <div class="row g-4">
+
+        <!-- Primeiro treino -->
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="card-title h5">Musculação</h3>
+                    <p class="card-text">
+                        Treinamento com pesos e aparelhos
+                        para desenvolver força muscular.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segundo treino -->
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="card-title h5">Calistenia</h3>
+                    <p class="card-text">
+                        Exercícios que utilizam o peso
+                        do próprio corpo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Terceiro treino -->
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="card-title h5">Treino Funcional</h3>
+                    <p class="card-text">
+                        Exercícios que trabalham força,
+                        equilíbrio e coordenação.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+    
+<!-- Seção de contato -->
+<section id="contato" class="container py-5">
+
+    <h2 class="text-center mb-4">
+        Entre em Contato
+    </h2>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <form id="formContato" novalidate>
+
+                <!-- Nome -->
+                <div class="mb-3">
+                    <label for="nome" class="form-label">
+                        Nome
+                    </label>
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+                </div>
+
+                <!-- E-mail -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+                </div>
+
+                <!-- Mensagem -->
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">
+                        Mensagem
+                    </label>
+
+                    <textarea
+                        class="form-control"
+                        id="mensagem"
+                        rows="4"
+                        placeholder="Digite sua mensagem"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-success">
+                    Enviar mensagem
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+    
+<!-- Rodapé -->
+<footer class="bg-dark text-white text-center py-4">
+
+    <div class="container">
+        <p class="mb-2">
+            &copy; 2026 Strength Training.
+            Todos os direitos reservados.
+        </p>
+
+        <p class="mb-0">
+            Desenvolvido com HTML, CSS,
+            Bootstrap e JavaScript.
+        </p>
+    </div>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
